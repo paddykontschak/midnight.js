@@ -188,17 +188,6 @@
         left: this.element.css("padding-left")
       };
 
-
-      // Create the fake headers
-      this.element
-        .css({
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          right: 0,
-          overflow: 'hidden'
-        });
-
       this._updateHeaderHeight();
 
       var $customHeaders = this.element.find('> .'+this.options['headerClass']);
